@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Multiplication Test</h1>
+    </header>
+    <main>
+        <section id="testArea">
+            <h2>Level <span id="level">1</span></h2>
+            <div id="question"></div>
+            <input type="number" id="answerInput" placeholder="Your answer">
+            <button onclick="submitAnswer()">Submit</button>
+            <div id="feedback"></div>
+            <div id="timer">Time left: <span id="timeLeft">60</span> seconds</div>
+        </section>
+        <section id="resultArea" style="display: none;">
+            <h2>Test Complete</h2>
+            <p id="resultMessage"></p>
+            <button onclick="restartTest()">Restart Test</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Multiplication Test. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
